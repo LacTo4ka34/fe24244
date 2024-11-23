@@ -104,6 +104,12 @@
   }
 
 
+  .MyFaworit{
+    display: flex;
+    justify-content: center;
+    background: #000;
+  }
+
 
   .create-line {
     width: 478px;
