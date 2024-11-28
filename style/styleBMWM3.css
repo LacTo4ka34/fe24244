@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: comfortaa, Arial, sans-serif;
+    font-size: 500;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+h1{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+section{
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+:root{
+    --text:#e6e6e6;
+    --text-invers: #373737;
+    --backgroung: #252525;
+    --backgroung-hover: #5c5c5c;
+    --backgroung2: #252525b5;
+    --background-button-1-2: #c0c0c0;
+    --background-button-1-2-hover: #818181;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+   flex-direction: column;
+    align-items: center ;
+   background-color: var(--backgroung2);
+   padding: 15px;
+   border-radius: 16px;
+   color: var(--text);
+}
+
+.button{
+    color: var(--text-invers);
+    background-color: var(--background-button-1-2);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.button:hover{
+    transition: 0.3s;
+    background-color: var(--background-button-1-2-hover);
+}
+
+.buttons{   
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button1{
+    color: var(--text-invers);
+    background-color: var(--background-button-1-2);
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.button2{
+    color: var(--text-invers);
+    background-color: var(--background-button-1-2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.button1:hover, .button2:hover{
+    transition: 0.3s;
+    background-color: var(--background-button-1-2-hover);
+}
+
+.fact-1{
+    background-image:  url("/img/slide1.png") ;
+}
+.fact-2{
+    background-image:  url("/img/slide2.png") ;
+}
+.fact-3{
+    background-image:  url("/img/slide3.png") ;
+}
+.fact-4{
+    background-image:  url("/img/slide4.png") ;
+}
+.fact-5{
+    background-image:  url("/img/slide5.png") ;
+}
+
+
+.but{
+    position: fixed;
+    z-index: 555;
+    bottom: 30px;
+    right: 50px;
+    box-shadow: 0px 14px 25px 14px rgba(34, 60, 80, 0.24);
+}
+
+.butt-up{
+    color: var(--text);
+    background-color: var(--backgroung);
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.butt-up:hover{
+    transition: 0.3s;
+    background-color: var(--backgroung-hover);
+}
