@@ -1,0 +1,77 @@
+body{
+    counter-reset: section-counter p-counter ;
+}
+
+ul{
+    position: relative;
+}
+
+.section{
+    counter-increment: section-counter;
+}
+.section h1::before{
+    content: "Заголовок " counter(section-counter) ": ";
+}
+
+
+
+
+.section-list p{
+    counter-increment: p-counter;
+    margin: 1px;
+  
+}
+.section-list p::before{
+    content: "1." counter(p-counter) "";
+    background: #f30000;
+    border-radius: 50%;
+}
+
+
+
+
+.section-list-2 p{
+    counter-increment: p-counter;
+    margin: 1px;
+  
+}
+.section-list-2 p::before{
+    content: "2." counter(p-counter) "";
+    background: #f30000;
+    border-radius: 50%;
+}
+
+
+
+.section_inner p::before{
+    position: fixed;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #4336ff;
+    left: 78px;
+    border-radius: 50%;
+}
+
+.section_inner p{
+    counter-increment: p-counter;
+    margin: 1px;
+  
+}
+.section_inner p::after{
+    content: " " counter(p-counter) "";
+}
+
+
+
+
+.section-list-3 p{
+    counter-increment: p-counter;
+    margin: 1px;
+  
+}
+.section-list-3 p::before{
+    content: "3." counter(p-counter) "";
+    background: #f30000;
+    border-radius: 50%;
+}
